@@ -7,24 +7,24 @@
 # - use environment variable on build command to include analytics: JEKYLL_ENV=production jekyll build
 
 # site settings
-title: go-go gh-pages!
+title: OpenDrop
 description: > 
-  Learn about GitHub pages and Jekyll. 
-keywords: "github, github-pages, websites, static gen, hosting, html, workshop, gh-pages"
+  Information about the current work on the OpenDrop Device
+keywords: "opendrop"
 
 # author settings for cc-by
-author: evan will
-pub_year: 2017
-github_username: evanwill
+author: Hannes Thielke
+pub_year: 2018
+github_username: pellkartoffel
 
 # add the full url for the github repository
-repo: "https://github.com/evanwill/go-go-ghpages"
+repo: "https://github.com/pellkartoffel/OpenDrop"
 
 # urls
 # your gh-pages url: https://username.github.io
-url: https://evanwill.github.io
+url: https://pellkartoffel.github.io
 # your repository name: /repository
-baseurl: /go-go-ghpages
+baseurl: /OpenDrop
 
 # analytics if desired (and use environment variable on build command)
 google_analytics: UA-74844011-1

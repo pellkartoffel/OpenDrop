@@ -2,34 +2,20 @@
 title: Home
 ---
 
-<div> 
-    <img src="{{ "/images/octocat.jpg" | absolute_url }}" alt="github octocat" style="width:45%;" >
-    <img src="{{ "/images/jekyll.png" | absolute_url }}" alt="jekyll icon" style="width:45%;" >
-</div>
+# OpenDrop - Microfluidics Lab-on-a-chip
+{% include figure.html file="opendrop_logo.png" caption="OpenDrop Logo" src="http://www.gaudi.ch/OpenDrop/" height="3cm" %}
 
-# Build a Website with Jekyll and GitHub Pages 
+Description (*drawn from [OpenDrop Official Website](http://www.gaudi.ch/OpenDrop/)*): 
 
-With [GitHub pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/) you can quickly create and publish a website for free! 
-It is an ideal solution for creating a simple project or personal site to highlight your academic work. 
+**OpenDrop** is an open source digital microfludics platform for research purposes made by the Swiss company GaudiLabs. The device uses recent electro-wetting technology to control small droplets of liquids. Potential applications are lab on a chip devices for automating processes of digital biology.
+The design approach chosen relies strongly on Do-It-Your-Self (DIY) and Low-Cost. The aim is to only use standard and widely-available components, materials, and production processes. Also, all design files and software required to operate your hardware are shared under open licenses (Github: [OpenDrop Repository](https://github.com/GaudiLabs/OpenDrop)).
 
-This workshop will introduce the basics of using the popular static website generator Jekyll integrated with GitHub pages. 
-You will learn how to set up a project repository, write content in Markdown, and publish your site, all using GitHub's user friendly web interface. 
-Advanced usage of Jekyll for local web development is introduced final section.
+# Versions
+The differences between the currently available versions of the OpenDrop System are shown in [this](tables/version_comparison.htm) tabular.
 
-Watch [workshop screen cast](https://youtu.be/SWVjQsvQocA) for full content.
+{% include figure.html file="opendrop_v1.0.png" caption="version 1.0" src="files/opendrop_paper.pdf" file2="opendrop_v2.0.jpg" src2="http://www.gaudi.ch/OpenDrop/?p=17" caption2="version 2.0" height="8cm" %}
+&nbsp;
+{% include figure.html file="opendrop_v2.1.jpg" caption="version 2.1" file2="opendrop_v3.0.jpg" caption2="version 3.0" src2="http://www.gaudi.ch/OpenDrop/?p=389" height="8cm" %}
+&nbsp;
 
-<div class="toc" markdown="1">
-## Contents:
-
-{% for lesson in site.pages %}
-{% if lesson.nav == true %}- [{{ lesson.title }}]({{ lesson.url | absolute_url }}){% endif %}
-{% endfor %}
-</div>
-
-### Hosted at [University of Idaho Library](http://www.lib.uidaho.edu/) April 2017
-
-> built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
->
-> licensed cc-by-sa <a href="https://github.com/evanwill">evan will</a> 2017. (get [source code]({{ site.repo }}))
-> 
-> <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" /></a>
+> built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/) based on the [template from  Evan Will](https://evanwill.github.io/go-go-ghpages/)
