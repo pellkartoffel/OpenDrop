@@ -33,7 +33,25 @@ On the back of the OpenDrop System you can find the following peripherals:
 {% include figure.html file="hv507pg_cascade.png" alt="HV507" height="5cm" %}
 According to it’s [datasheet](files/hv507_datasheet.pdf), the HV507PG is “a low-voltage to high-voltage serial-to-parallel converter with 64 push-pull outputs”. As the matrix has got 16x8=128 electrodes, two serial-to-parallel converters are used in series (as a cascade). The DIOA pin of the first chip is configured as the main serial input. The DIOB pin is configured as the output and is connected to the DIOA input of the second chip. In this way it is possible to drive 128 high voltage outputs instead of 64.
 
-Pins: see [here](tables/hv507_pins.htm)
+<!--  This table was created with http://tableizer.journalistopia.com -->
+<figure>
+{% include table_style.html %}
+<table class="tableizer-table"  cellspacing="0">
+<thead><tr class="tableizer-firstrow"><th>Pin Nr.</th><th>Pin Name</th><th>Description</th></tr></thead><tbody>
+ <tr><td>25 + 40 </td><td>VPP </td><td>High-voltage power supply </td></tr>
+ <tr><td>26</td><td>DIOA </td><td>Serial Data Input/Output A à here configured as data input</td></tr>
+ <tr><td>29</td><td>BL </td><td>Blanking pin</td></tr>
+ <tr><td>30</td><td>POL </td><td>Polarity </td></tr>
+ <tr><td>31</td><td>VDD </td><td>Low-voltage power supply </td></tr>
+ <tr><td>32</td><td>DIR </td><td>Direction pin: DIR is physically connected to GND à DIOA is data in and DIOB is data out. Data is shifted from HVOUT64 to</td></tr>
+ <tr><td>33</td><td>GND </td><td>Logic voltage ground </td></tr>
+ <tr><td>34</td><td>HVGND </td><td>High-voltage power supply </td></tr>
+ <tr><td>37</td><td>CLK </td><td>Data Shift Register Clock. Inputs are shifted into the Shift register on the positive edge of the clock. </td></tr>
+ <tr><td>38</td><td>LE </td><td>Latch Enable </td></tr>
+ <tr><td>39</td><td>DIOB </td><td>Serial Data Input/Output B</td></tr>
+</tbody></table>
+</figure>
+<figcaption>Overview of a selection of pins on the HV507 chip</figcaption>
 
 The electrodes can be turned on or off by sending a 128bit code to the DIOA pin of the first HV507PG chip. This data is first send to the static shift register and afterwards stored in the latches. To send the data to the actual electrode matrix - thus activating the high voltage electrodes – the blanking pin must be activated.
 
