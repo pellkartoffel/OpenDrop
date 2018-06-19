@@ -5,13 +5,13 @@ title: Home
 # OpenDrop - Microfluidics Lab-on-a-chip
 {% include figure.html file="opendrop_logo.png" caption="OpenDrop Logo" src="http://www.gaudi.ch/OpenDrop/" height="3cm" %}
 
-Description (*drawn from [OpenDrop Official Website](http://www.gaudi.ch/OpenDrop/)*): 
+Since the beginning of microfluidics the technique of controlling small volumes of liquid for all kinds of applications has become more and more popular. It enables new possibilities for biological applications like lab-on-a-chip experiments. The so-called "electrowetting" technique helps automating these processes by making it possible to control the behaviour of fluids via electronical regulation. The change of an electrical field can achieve droplet-movements without direct human interaction and so can avoid external influences or human errors.
 
-**OpenDrop** is an open source digital microfludics platform for research purposes made by the Swiss company GaudiLabs. The device uses recent electro-wetting technology to control small droplets of liquids. Potential applications are lab on a chip devices for automating processes of digital biology.
+The **OpenDrop** (*description drawn from [OpenDrop Official Website](http://www.gaudi.ch/OpenDrop/)*) is an open source digital microfludics platform for research purposes made by the Swiss company GaudiLabs. The device uses recent electro-wetting technology to control small droplets of liquids. Potential applications are lab on a chip devices for automating processes of digital biology.
 The design approach chosen relies strongly on Do-It-Your-Self (DIY) and Low-Cost. The aim is to only use standard and widely-available components, materials, and production processes. Also, all design files and software required to operate your hardware are shared under open licenses (Github: [OpenDrop Repository](https://github.com/GaudiLabs/OpenDrop)).
 
 # Versions
-The differences between the currently available versions of the OpenDrop System are shown in [this](tables/version_comparison.htm) tabular.
+Since it's first publication the **OpenDrop** System has been improved a lot and is still being developed to extend the possibilities of the device. The differences between the currently available versions of the OpenDrop System are shown in the following table.
 
 <!--  This table was created with http://tableizer.journalistopia.com -->
 <figure>
